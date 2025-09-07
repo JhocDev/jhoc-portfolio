@@ -1,25 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-@import url(responsive.css);
 @import url(aside.css);
 @import url(content.css);
-
-* {
-	font-family: "Poppins", sans-serif;
-	color: #ffffff;
-	box-sizing: border-box;
-}
-body {
-	background-color: #111111;
-	padding: 0;
-  margin: 0;
-}		
-.container {
-  display: flex;
-  gap: 2%;
-  flex-wrap: wrap;
-  align-content: start;
-  padding-bottom: 60px; /* Space for the footer */
-  margin: 40px;
-
-}
-
+@import url(base.css);
+@import url(layout.css);
