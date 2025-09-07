@@ -1,0 +1,38 @@
+aside {
+  flex: 1 1 20%;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+#profile-pic-container {
+  text-align: center;
+  margin-bottom: 15px;
+  background-color: #3c3c3c;
+  height: 120px;
+}
+aside img {
+  width: 50%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: block;
+  margin: auto;
+}
+aside h4 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+aside p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+}
+#position {
+  background-color: #3c3c3c;
+  font-weight: 600;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: auto;
+}
