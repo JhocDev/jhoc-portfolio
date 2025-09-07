@@ -3,36 +3,95 @@ aside {
   background-color: #1e1e1e;
   padding: 20px;
   border-radius: 10px;
+  max-width: 300px; /* prevents it from being too wide */
+}
 
-}
 #profile-pic-container {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 15px;
-  background-color: #3c3c3c;
-  height: 120px;
 }
+
 aside img {
-  width: 50%;
+  width: 120px; /* fixed size for consistency */
+  max-width: 100%;
   border-radius: 50%;
   margin-bottom: 15px;
-  display: block;
-  margin: auto;
 }
+
 aside h4 {
   text-align: center;
   font-size: 18px;
   margin-bottom: 5px;
+  color: #fff;
 }
+
 aside p {
   text-align: center;
   font-size: 14px;
   line-height: 1.5;
+  color: #ddd;
 }
+
 #position {
   background-color: #3c3c3c;
   font-weight: 600;
   height: 30px;
   line-height: 30px;
   text-align: center;
-  width: auto;
+  border-radius: 6px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #00aced;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+  aside {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  aside img {
+    width: 100px;
+  }
+
+  aside h4 {
+    font-size: 16px;
+  }
+
+  aside p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  aside img {
+    width: 80px;
+  }
+
+  aside h4 {
+    font-size: 14px;
+  }
+
+  aside p {
+    font-size: 12px;
+  }
 }
