@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss:css"
   },
   "repository": {
     "type": "git",
@@ -16,8 +17,8 @@
   "bugs": {
     "url": "https://github.com/JhocDev/jhoc-portfolio/issues"
   },
-  "homepage": "https://github.com/JhocDev/jhoc-portfolio#readme",
-  "devDependencies": {
+"devDependencies": {
     "sass": "^1.92.1"
   }
 }
+
