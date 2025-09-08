@@ -32,4 +32,13 @@
                 menuToggle.classList.remove("open");
             }
             });
+            
 // ☰ ✖
+
+const navLinksList = document.querySelectorAll("#nav-links li a");
+
+navLinksList.forEach(link => {
+  if (link.href === window.location.href) {
+    link.classList.add("active");
+  }
+});
