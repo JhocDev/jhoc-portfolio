@@ -10,7 +10,7 @@
                     img.onload = () => {
                         img.style.opacity = 1;
                     };
-                    // For cached images, trigger opacity immediately
+                  
                     if (img.complete) {
                         img.style.opacity = 1;
                     }
@@ -23,12 +23,13 @@
             menuToggle.addEventListener("click", () => {
             navLinks.classList.toggle("show");
 
-            // Change icon ☰ <-> ✖
-            if (menuToggle.textContent === "☰") {
-                menuToggle.textContent = "✖";
+            
+            if (menuToggle.textContent === "✖") {
+                menuToggle.textContent = "☰";
                 menuToggle.classList.add("open");
             } else {
-                menuToggle.textContent = "☰";
+                menuToggle.textContent = "✖";
                 menuToggle.classList.remove("open");
             }
             });
+// ☰ ✖
