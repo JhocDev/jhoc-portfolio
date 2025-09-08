@@ -20,6 +20,15 @@
             const menuToggle = document.getElementById("menu-toggle");
             const navLinks = document.getElementById("nav-links");
 
-                menuToggle.addEventListener("click", () => {
-                    navLinks.classList.toggle("show");
-                });
+            menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+
+            // Change icon ☰ <-> ✖
+            if (menuToggle.textContent === "☰") {
+                menuToggle.textContent = "✖";
+                menuToggle.classList.add("open");
+            } else {
+                menuToggle.textContent = "☰";
+                menuToggle.classList.remove("open");
+            }
+            });

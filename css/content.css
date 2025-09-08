@@ -6,104 +6,88 @@ main {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .nav-container {
-  border: 1px solid #ffff;
-  background-color: #2e2e2e;
+  background-color: #1f1f1f;
+  color: white;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  flex-wrap: wrap; 
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 15px;
-}
-
-li {
-  margin: 0;
-}
-
-a {
+.title {
+  font-size: 20px;
+  font-weight: 700;
   color: #ffffff;
+}
+
+#nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+#nav-links li a {
+  color: white;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
-/* Hamburger button */
+#nav-links li a:hover {
+  color: #00ffff;
+  transform: translateY(-2px);
+}
+
+
 .menu-toggle {
   display: none;
-  font-size: 24px;
+  font-size: 28px;
   background: none;
   border: none;
   color: #fff;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-/* Responsive styles */
+.menu-toggle.open {
+  transform: rotate(90deg); 
+}
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
   }
 
   #nav-links {
-    display: none;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     width: 100%;
-    margin-top: 10px;
+    padding-top: 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    max-height: 0;
+    opacity: 0;
   }
 
   #nav-links.show {
-    display: flex;
+    max-height: 500px; 
+    opacity: 1;
+    padding-top: 15px;
   }
 
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
+  #nav-links li {
+    width: 100%;
+    text-align: center;
   }
 }
 
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-li {
-  margin: 0;
-}
-
-a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .nav-container {
-  flex-direction: column;
-  align-items: flex-start;
-  }
-  ul {
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  }
-  li {
-  width: 100%;
-  }
-}
 content {
   margin: 20px 0 0 0;
   line-height: 1.6;
