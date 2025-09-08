@@ -122,5 +122,10 @@ main {
 content {
   margin: 20px 0 0 0;
   line-height: 1.6;
-  border: 1px solid #ffff;
+  padding: 20px;
+  border: 1px solid white;
+  
+}
+section{
+  margin-bottom: 30px;
 }

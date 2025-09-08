@@ -1,0 +1,211 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhoc | Web Developer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+
+        <aside>
+            
+            <div id="profile-pic-container">
+            <img src="../images/profile.jpg" alt="Profile Picture" class="profile-pic" id="profile-pic">
+            <button onclick="switchProfilePic()" type="button" aria-label="Switch Photo" style="background:none;border:none;cursor:pointer;">
+                <i class="fa-solid fa-arrows-rotate" id="profile-pic-switcher"></i>
+            </button>
+            </div>
+        
+
+            <h4 id="person-name">John Harold Cruda</h4>
+            <p id="position">Web Developer</p>
+
+            <hr>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="contact-text">
+                        <strong>EMAIL</strong>
+                        <span>jhoc.developer@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="contact-text">
+                        <strong>PHONE</strong>
+                        <span>+63 912 956 6579</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="contact-text">
+                        <strong>LOCATION</strong>
+                        <span>Bacolod City, Philippines</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="social-links">
+                <div class="social-item">
+                    <a href="https://github.com/JhocDev" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="social-item">
+                    <a href="https://www.linkedin.com/in/johnharoldcruda/" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+
+                <div class="social-item">
+                    <a href="https://twitter.com/johndoe" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+        </aside>
+
+        <div class="spacer"></div>
+
+
+
+        <main>
+            <nav>
+            <div class="nav-container">
+                <div id="text-header">
+                <h1 class="title" >Resume</h1>
+                </div>
+
+                <button class="menu-toggle" id="menu-toggle">
+                ☰
+                </button>
+
+                <ul id="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            </nav>
+
+
+            <content>
+                <section id="education">
+                   <h2>
+                       <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                       Education
+                   </h2>
+                <ul>
+                    <li>
+                        <strong>Bachelor of Science in Information Technology</strong><br>
+                        <i class="fa-solid fa-school"></i>
+                        Carlos Hilado Memorial State University<br>
+                        2020 - 2024
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <strong>Contact Center Services NC II</strong><br>
+                        <i class="fa-solid fa-building-columns"></i>
+                        Bacolod City National High School Senior High School<br>
+                        2018 - 2020
+                    </li>
+                </ul>
+                </section>
+
+                <section id="work-experience">
+                    <h2>
+                        <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                        Work Experience
+                    </h2>
+                    <ul>
+                        <li>
+                            <strong>Web Developer</strong> – Freelance<br>
+                            <i class="fa-solid fa-laptop-code"></i>
+                            2020 - Present<br>
+                        <span>Developed and maintained websites for various clients using HTML, CSS, JavaScript, and PHP.</span>
+                    </li>
+                    <li>
+                        <strong>Intern Web Developer</strong> – ABC Solutions<br>
+                        <i class="fa-solid fa-user-graduate"></i>
+                        June 2019 - August 2019<br>
+                        <span>Assisted in building web applications and performed website updates.</span>
+                    </li>
+                </ul>
+            </section>
+
+        <section id="skills">
+            <h2>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                Skills
+            </h2>
+            <ul>
+                <li>
+                    <strong>Frontend:</strong> HTML, CSS, JavaScript, Bootstrap, React
+                </li>
+                <li>
+                    <strong>Backend:</strong> PHP, MySQL, Node.js
+                </li>
+                <li>
+                    <strong>Tools:</strong> Git, VS Code, Figma
+                </li>
+                <li>
+                    <strong>Other:</strong> Responsive Design, REST APIs, SEO Basics
+                </li>
+            </ul>
+        </section>
+
+
+        <section id="courses-training">
+            <h2>
+            <i class="fa-solid fa-chalkboard-teacher" aria-hidden="true"></i>
+            Courses & Training
+            </h2>
+            <ul>
+            <li>
+                <strong>Responsive Web Design</strong> – freeCodeCamp<br>
+                <span>Completed coursework on HTML, CSS, and modern web design principles.</span>
+            </li>
+            <li>
+                <strong>JavaScript Algorithms and Data Structures</strong> – freeCodeCamp<br>
+                <span>Learned core JavaScript concepts, ES6, and algorithmic problem solving.</span>
+            </li>
+            <li>
+                <strong>PHP for Beginners</strong> – Udemy<br>
+                <span>Covered PHP basics, MySQL integration, and backend development.</span>
+            </li>
+            <li>
+                <strong>React Fundamentals</strong> – Codecademy<br>
+                <span>Studied React components, state management, and building single-page applications.</span>
+            </li>
+            </ul>
+        </section>
+            </content>
+
+        </main>
+
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -32,10 +32,10 @@ aside {
   position: absolute;
   margin: 35px 0 0 -20px;
   font-size: 12px;
-  color: #ffffff;
+  color: #6497b1;
   background-color: #3c3c3c;
   border-radius: 10px 0 10px 0;
-  border: 2px solid #ffffff;
+  border: 2px solid #6497b1;
   padding: 8px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
@@ -94,7 +94,7 @@ aside p {
 
 .contact-item i {
   font-size: 16px;
-  color: #ffffff;
+  color: #6497b1;
   margin: 3px 10px 0 0;
   width: 40px;
   text-align: center;
@@ -144,7 +144,7 @@ aside p {
 
 .social-item i {
   font-size: 18px;
-  color: #ffffff;
+  color: #6497b1;
   margin-right: 10px;
   margin-top: 3px;
   width: 20px;
