@@ -31,7 +31,6 @@ aside p {
   line-height: 1.5;
   color: #ddd;
 }
-
 #position {
   background-color: #3c3c3c;
   font-weight: 600;
@@ -43,22 +42,100 @@ aside p {
   color: #fff;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+
+
+
+
+.contact-info {
   margin-top: 15px;
 }
 
-.social-links a {
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  color: #ddd;
+  font-size: 14px;
+}
+
+.contact-item i {
+  font-size: 16px;
+  color: #00aced;
+  margin-right: 10px;
+  margin-top: 3px; /* aligns icon vertically */
+  width: 20px; /* keeps alignment consistent */
+  text-align: center;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-text strong {
   color: #fff;
+  font-size: 13px;
+}
+
+.contact-text span {
+  font-size: 13px;
+  color: #ddd;
+}
+
+
+
+
+
+
+
+.social-links {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.social-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  color: #ddd;
+  font-size: 14px;
+}
+
+.social-item i {
   font-size: 18px;
+  color: #00aced;
+  margin-right: 10px;
+  margin-top: 3px;
+  width: 20px;
+  text-align: center;
+}
+
+.social-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-text strong {
+  color: #fff;
+  font-size: 13px;
+}
+
+.social-text a {
+  font-size: 13px;
+  color: #ddd;
+  text-decoration: none;
   transition: color 0.3s;
 }
 
-.social-links a:hover {
+.social-text a:hover {
   color: #00aced;
 }
+
 
 /* ✅ Responsive adjustments */
 @media (max-width: 768px) {
