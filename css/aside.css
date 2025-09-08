@@ -3,51 +3,84 @@ aside {
   background-color: #1e1e1e;
   padding: 20px;
   border-radius: 10px;
-  max-width: 300px; /* prevents it from being too wide */
+  max-width: 300px;
 }
 
 #profile-pic-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
+  background-color: #3c3c3c;
+  border-radius: 20%;
+  width: 180px;
+  height: 180px;
+  margin: 20px auto;
+}
+#profile-pic{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width:120px;
+  height: 120px;
+  transition: opacity 0.5s;
+  object-fit: cover;
+  border-radius: 20%;
+  
+}
+#profile-pic.fade-out {
+  opacity: 0;
+}
+#profile-pic-switcher{
+  position: absolute;
+  margin: 35px 0 0 -20px;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #3c3c3c;
+  border-radius: 10px 0 10px 0;
+  border: 2px solid #ffffff;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-aside img {
-  width: 120px; /* fixed size for consistency */
-  border-radius: 100%;
-}
-
-aside h4 {
+#person-name {
+  font-weight: 600;  
   text-align: center;
   font-size: 18px;
   margin-bottom: 5px;
   color: #fff;
+  
+
+}
+aside h4 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0 5px 0;
+  color: #00aced;
+}
+aside p {
+  font-size: 14px;
+  text-align: center;
+  color: #ddd;
+  line-height: 1.4;
 }
 
-aside p {
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #ddd;
-}
 #position {
   background-color: #3c3c3c;
-  font-weight: 600;
-  height: 30px;
-  line-height: 30px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
   border-radius: 6px;
-  margin: 10px 0;
+  margin: 10px 0px 30px 0px;
   color: #fff;
+  font-size: 14px;
+    letter-spacing: 0.1em;
 }
 
-
-
-
-
 .contact-info {
-  margin-top: 15px;
+  margin-top: 30px;
+  padding: 5px;
+  
 }
 
 .contact-item {
@@ -56,15 +89,20 @@ aside p {
   margin-bottom: 12px;
   color: #ddd;
   font-size: 14px;
+  column-gap: 10px;
 }
 
 .contact-item i {
   font-size: 16px;
-  color: #00aced;
-  margin-right: 10px;
-  margin-top: 3px; /* aligns icon vertically */
-  width: 20px; /* keeps alignment consistent */
+  color: #ffffff;
+  margin: 3px 10px 0 0;
+  width: 40px;
   text-align: center;
+  height: 40px;
+  border-radius: 20%;
+  padding: 5px;
+  background-color: #3c3c3c;
+  line-height: 30px;
 }
 
 .contact-text {
@@ -75,21 +113,19 @@ aside p {
 .contact-text strong {
   color: #fff;
   font-size: 13px;
+  letter-spacing: 0.1em;
 }
 
 .contact-text span {
   font-size: 13px;
   color: #ddd;
+  word-break: break-word; /* ensures long text wraps */
+  padding: 5px 0;
 }
 
 
-
-
-
-
-
 .social-links {
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -108,16 +144,23 @@ aside p {
 
 .social-item i {
   font-size: 18px;
-  color: #00aced;
+  color: #ffffff;
   margin-right: 10px;
   margin-top: 3px;
   width: 20px;
   text-align: center;
+  background-color: #3c3c3c;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 20%;
+
 }
 
 .social-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .social-text strong {
@@ -150,6 +193,7 @@ aside p {
 
   aside h4 {
     font-size: 16px;
+    margin-top: 10px;
   }
 
   aside p {

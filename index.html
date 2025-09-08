@@ -17,9 +17,14 @@
     <div class="container">
 
         <aside>
+            
             <div id="profile-pic-container">
-                <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic" id="profile-pic">
+            <button onclick="switchProfilePic()" type="button" aria-label="Switch Photo" style="background:none;border:none;cursor:pointer;">
+                <i class="fa-solid fa-arrows-rotate" id="profile-pic-switcher"></i>
+            </button>
             </div>
+        
 
             <h4 id="person-name">John Harold Cruda</h4>
             <p id="position">Web Developer</p>
@@ -30,7 +35,7 @@
                 <div class="contact-item">
                     <i class="fa-solid fa-envelope"></i>
                     <div class="contact-text">
-                        <strong>Email</strong>
+                        <strong>EMAIL</strong>
                         <span>jhoc.developer@gmail.com</span>
                     </div>
                 </div>
@@ -38,7 +43,7 @@
                 <div class="contact-item">
                     <i class="fa-solid fa-phone"></i>
                     <div class="contact-text">
-                        <strong>Phone</strong>
+                        <strong>PHONE</strong>
                         <span>+63 912 956 6579</span>
                     </div>
                 </div>
@@ -46,7 +51,7 @@
                 <div class="contact-item">
                     <i class="fa-solid fa-location-dot"></i>
                     <div class="contact-text">
-                        <strong>Location</strong>
+                        <strong>LOCATION</strong>
                         <span>Bacolod City, Philippines</span>
                     </div>
                 </div>
@@ -75,10 +80,9 @@
 
         </aside>
 
-
-
-
         <div class="spacer"></div>
+
+
 
         <main>
               <nav>
@@ -94,13 +98,12 @@
             <p>This is a simple portfolio website to showcase my projects and skills as a web developer.</p>
            </content>
 
-           
-
-
         </main>
 
 
     </div>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
